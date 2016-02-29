@@ -18,6 +18,8 @@ class TabBarViewController: UIViewController {
     var accountViewController: UIViewController!
     var trendingViewController: UIViewController!
     
+    var fadeTransition: FadeTransition!
+    
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
     
@@ -40,6 +42,24 @@ class TabBarViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
+        var destinationViewController = segue.destinationViewController
+        
+        // Set the modal presentation style of your destinationViewController to be custom.
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        // Create a new instance of your fadeTransition.
+        fadeTransition = FadeTransition()
+        
+        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+        destinationViewController.transitioningDelegate = fadeTransition
+        
+        // Adjust the transition duration. (seconds)
+        fadeTransition.duration = 0.2
     }
     
     @IBAction func tabDidTap(sender: UIButton) {
