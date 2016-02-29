@@ -23,7 +23,7 @@ NONE
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/marchaumann/Dropbox/blob/master/dropbox.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/marchaumann/Tumblr/blob/master/tumblr.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LICECap.
 
