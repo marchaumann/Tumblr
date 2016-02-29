@@ -14,6 +14,8 @@
 		C9FB054F1C829E8000FB578C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB054D1C829E8000FB578C /* LaunchScreen.storyboard */; };
 		C9FB055A1C829E8000FB578C /* TumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB05591C829E8000FB578C /* TumblrTests.swift */; };
 		C9FB05651C829E8000FB578C /* TumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB05641C829E8000FB578C /* TumblrUITests.swift */; };
+		C9FB05731C82A21600FB578C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB05721C82A21600FB578C /* TabBarViewController.swift */; };
+		C9FB05751C82A45D00FB578C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB05741C82A45D00FB578C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C9FB05601C829E8000FB578C /* TumblrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FB05641C829E8000FB578C /* TumblrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrUITests.swift; sourceTree = "<group>"; };
 		C9FB05661C829E8000FB578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FB05721C82A21600FB578C /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C9FB05741C82A45D00FB578C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				C9FB05441C829E8000FB578C /* AppDelegate.swift */,
 				C9FB05461C829E8000FB578C /* ViewController.swift */,
 				C9FB05481C829E8000FB578C /* Main.storyboard */,
+				C9FB05741C82A45D00FB578C /* HomeViewController.swift */,
+				C9FB05721C82A21600FB578C /* TabBarViewController.swift */,
 				C9FB054B1C829E8000FB578C /* Assets.xcassets */,
 				C9FB054D1C829E8000FB578C /* LaunchScreen.storyboard */,
 				C9FB05501C829E8000FB578C /* Info.plist */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9FB05471C829E8000FB578C /* ViewController.swift in Sources */,
+				C9FB05731C82A21600FB578C /* TabBarViewController.swift in Sources */,
 				C9FB05451C829E8000FB578C /* AppDelegate.swift in Sources */,
+				C9FB05751C82A45D00FB578C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
