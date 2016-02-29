@@ -10,6 +10,7 @@ import UIKit
 
 class TabBarViewController: UIViewController {
 
+    @IBOutlet weak var tooltip: UIImageView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var buttons: [UIButton]!
     var homeViewController: UIViewController!
@@ -22,6 +23,9 @@ class TabBarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIView.animateWithDuration(1, delay: 0, options: [.Repeat, .Autoreverse, .CurveEaseInOut], animations: { () -> Void in
+            self.tooltip.transform = CGAffineTransformMakeTranslation(0, -5)
+            }, completion: nil)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController")
         searchViewController = storyboard.instantiateViewControllerWithIdentifier("SearchViewController")
@@ -53,6 +57,16 @@ class TabBarViewController: UIViewController {
         vc.view.frame = contentView.bounds
         contentView.addSubview(vc.view)
         vc.didMoveToParentViewController(self)
+        
+        if selectedIndex == 1 {
+            UIView.animateWithDuration(0.3, delay: 0, options: [], animations: { () -> Void in
+                self.tooltip.alpha = 0
+                }, completion: nil)
+        } else {
+            UIView.animateWithDuration(0.3, delay: 0, options: [], animations: { () -> Void in
+                self.tooltip.alpha = 1
+                }, completion: nil)
+        }
     }
 
     /*
